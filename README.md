@@ -1,5 +1,8 @@
 # How to Eli Pi
 ## Python introduction course for the ELI^2 student committee.
+-----
+
+[![Run on Repl.it](https://repl.it/badge/github/ucfeli2/How-to-Eli-Pi)](https://repl.it/github/ucfeli2/How-to-Eli-Pi)
 
 ##### This course is intended to educate core programming and computer science concepts to non-computer engineering students. Created and curated by students in computer disciplines and/or with programming backgrounds and experience. We feel that coding is a necessary and useful skill for everyone and we want to share this knowledge with anybody who is willing to learn!
 
