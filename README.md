@@ -17,4 +17,4 @@
 8. Functions
 9. Modules and Standard Libraries
 
-#### To get started, head over to @00_Start_Here
+#### To get started, head over to [Start Here](00_Start_Here/Start_Here.md)
