@@ -18,7 +18,7 @@ Depending on your Linux distribution, the name of the terminal may be different.
 
 The following should be open on your terminal:
 ```
-Python 3.8.1 (default, Feb 2 2020, 08:37:37) 
+Python 3.8.1 (default, <current_date>, <current_time>) 
 [GCC 8.3.0] on <your_operating_system>
 Type "help", "copyright", "credits" or "license" for more i
 nformation.
