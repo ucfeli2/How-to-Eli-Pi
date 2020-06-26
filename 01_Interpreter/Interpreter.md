@@ -1,6 +1,6 @@
 # 1. Interpreter
 
-Before diving into the syntax, we want to take a moment to discuss the Python interpreter. The interpreter will be your home for testing small snippets of code. It is essentialy a private workspace where commands can be executed.
+Before diving into the syntax, we want to take a moment to discuss the Python interpreter. The interpreter will be your home for testing small snippets of code. It is essentially a private workspace where commands can be executed.
 
 * Note that there are two different interpreters available to the user, _"python2"_ and _"python3"._
 
@@ -25,13 +25,13 @@ nformation.
 >>> _
 ``` 
 ## Interpreter vs Terminal:
-The differences between the Interpreter and terminal and mainly semantic. Terminals typically have access to the operating system, whereas the interpreter does now. However, there are modules that allow the interpreter to access components of the OS. In addition, both are types of text-based interfaces that rely on the user to input commands.
+The differences between the Interpreter and terminal and mainly semantic. Terminals typically have access to the operating system, whereas the interpreter does not. However, there are modules that allow the interpreter to access components of the OS. In addition, both types are examples of text-based interfaces which rely on the user to input commands.
 
-Depending on the platform, each terminal may use a different language. The Window's command prompt uses MS DOS, PowerShell uses a proprietary scripting language, Mac and Linux use variants of Bash. The Python interpreter is just another implenetation of a terminal, in this case using the Python language.
+Depending on the platform, each terminal may use a different language. The Window's command prompt uses MS DOS, PowerShell uses a proprietary scripting language, Mac and Linux use variants of Bash. The Python interpreter is just another implementation of a terminal, in this case using the Python language.
 
 
 ## Python as a basic calculator:
-Since we can run Python right on the terminal, we can use it as a basic calculator without having to compile and then run the program to get the answer. Once we have the the interpreter open, we can directly input the calculations we want to do. Only simple calculations (addition, subtraction, division, multiplication, and modulus) can be run in the interpreter without needing to import any additional libraries.
+Since we can run Python right on the terminal, we can use it as a basic calculator without having to compile and then run the program to get the answer. Once we have the interpreter open, we can directly input the calculations we want to do. Only simple calculations (addition, subtraction, division, multiplication, and modulus)  be run in the interpreter without needing to import any additional libraries.
 ```python
 $ python3
 Python 3.8.1 (default, <current_date>, <current_time>) 
@@ -48,35 +48,35 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 1000000 - 10000
 990000
 ```
-You can also complex numbers in your calculations by importing the cmath library.
+Complex numbers may also be used after importing the cmath library.
 ```python
 >>> 1e20 - 1e15
 9.9999e+19
 >>> 1.25e5 % 3e2
 200.0
 ```
-## Simple data types
-
 ## Using the Interpreter to Run Programs
- Consider the file main.py
+ Consider the file main.py:
 ```python
 print("hello world")
 ```
-Typically, you could run this one of two ways: either by entering `python3 main.py` into your computer's terminal (method 1) or by going into the Python interpreter by typing `python3` and within the interpreter, enter `import main` (method 2). Both of these methods will yield the same outputs. However, considering the simplicity of this program, you could just enter the code directly into the interpreter (Method 3), and see the results immediately.
+Typically, you could run this one of two ways: either by entering `python3 main.py` into your computer's terminal (method 1) or by going into the Python interpreter by typing `python3` and within the interpreter, enter `import main` (method 2). For method two, the file does not need to be named main, simply insert the filename. Both of these methods will yield the same outputs. However, considering the simplicity of this program, you could just enter the code directly into the interpreter (Method 3), and see the results immediately.
 #### Method 1
-```
-$ python3 main.py
+```python
+$ python3
+...
+>>> main.py
 hello world
 ```
 #### Method 2
-```
+```python
 $ python3
 ...
 >>> import main
 hello world
 ```
 #### Method 3
-```
+```python
 >>> print("hello world")
 hello world
 ```

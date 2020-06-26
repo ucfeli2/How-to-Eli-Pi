@@ -43,15 +43,14 @@ c = bool(None) #c = False
 ```
 
 ### 4. Complex Numbers (_complex_)
-Two dimensional numbers represented as a+ib, where a and b are real numbers. Note that python uses j instead of i. They are exactly the same, the engineering disciplines choose to use j, whereas mathematics uses i.
+Two dimensional numbers represented as a+ib, where a and b are real numbers and i is the square root of -1.
 
 ```python
 z = complex(1, 5) # Initializes to 1 + i1
 print(z.real)     # Prints the value 1
 print(z.imag)     # Prints the value 5 
 ```
-
-Complex numbers may seem the least applicable with respect to the other data types. However, they are incredibly useful within Electrical Engineering.
+Note that python uses j instead of i. They are exactly the same, the engineering disciplines choose to use j, whereas mathematics uses i. Complex numbers may seem the least applicable with respect to the other data types. However, they are incredibly useful within Electrical Engineering.
 
 ### 5. Strings (_str_)
 Ordered sequence of characters (numbers, letters, etc.)
@@ -62,8 +61,19 @@ b = str(20) # The str() function turns whatever input is passed into a string
 c = 'of Kingdom Orlando' # There is no difference between single quotes and double quotes in python
 
 #You can construct a string by concatenating other strings as such:
-d = a + ", aged " + b + ", " + c #'Toast, aged 20, of Kingdom Orlando'
+d = a + ", aged " + b + ", " + c # d = 'Toast, aged 20, of Kingdom Orlando'
 ```
+As in other languages, strings are stored as a sequential list, or array, of characters. Each character is accessible by indexing the string at a given position. Note that indexing the string starts at zero.
+
+```python
+message = "Hello World!"
+print(message[0]) # Will print H, the first letter of the string.
+print(message[6]) # Will print the letter W.
+
+# Python is able to access strings using negative indicies.
+print(message[-1]) # Will print the letter !.
+```
+String operations are made extremely intuitive in Python. It is essential to become proficient with them
 
 ### 6. Lists (_list_)
 Ordered sequence of objects
@@ -75,7 +85,7 @@ secondElement = aList[1] #lists are indexed, so we can access specific elements 
 ```
 
 ### 7. Dictionaries (_dict_)
-Unordered _key_:_value_ pairs
+Unordered _key_ : _value_ pairs
 ex. `{"myKey":"value", "name":"Tyler"}`
 Also known as "Hash Tables" in other languages
 ```python
@@ -100,12 +110,39 @@ removedValue = myDict.pop("city") #removedValue = "Orlando"
 ### 8. Tuples (_tup_)
 Ordered immutable (or unchangeable) sequence of objects
 ex. `(10, "hello", 2005.6))`
+```python
+#creating a Tuple
+aTuple = ("UCF", "ELI2", "Python", "Course")
 
+#Tuples are index, so we can access an element using its index
+print(aTuple[0]) #UCF
+
+#Since tuples are immutable, you can't change values
+aTuple[1] = "Engineering" #Throws an error
+
+#As with lists, you can access specific range of elements within the tuple
+print(aTuple[1:3]) #('ELI2', 'Python') - starting from index 1 up to index 3 (excluding index 3)
+```
 
 ### 9. Sets (_set_)
 Unordered collection of unique objects
 ex. `{"a", "b"}`
+```python
+aSet = {"a", "b", "c", "d"}
 
+#Since they are unordered, the elements won't print out in the same order
+print(aSet)
+
+#Cannot change values in a set, but can add to it
+aSet.add('e') #aSet = {'a', 'b', 'c', 'd', 'e'}
+
+#Cannot add duplicate elements to a set
+aSet.add('a') #aSet is still {'a', 'b', 'c', 'd', 'e'}
+
+#Can remove the last item in the set using pop, but we won't know what will be remove since it's unordered
+poppedItem = aSet.pop()
+print(poppedItem)
+```
 
 ### Arithmetic Operators
 Python features 7 basic operations to perform on numeric data types (_int_ and _float_):
