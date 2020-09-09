@@ -105,6 +105,8 @@ if grade >= 70:
   print('letter grade: C')
 if grade >= 60:
   print('letter grade: D')
+if grade >= 0:
+  print('letter grade: F')
 ```
 In the above example, each if statement evaluates a conditional statement to see whether the variable is greater or equal to a particular value. You would expect the output to just be `letter grade: A`, right? Turns out, the actual output is:
 ```
@@ -112,9 +114,57 @@ letter grade: A
 letter grade: B
 letter grade: C
 letter grade: D
+letter grade: F
 ```
 Why is that?
-In the example, every if statement evaluates to true, so each code nested within the statement executes. To prevent this, elif and else statements are used. 
+In the example, every if statement evaluates to true, so each code nested within the statement executes. To prevent this, elif and else statements are used.
+
+Elif statements executes only if the previous if and elif statements do not execute.
+Else statements always execute if the previous if and elif statements do not execute.
+The group of if-elif-else statements is referred to as simply an if-elif-else statement.
+Note: every if-elif-else statement has one if statement, one optional else statement, and an unlimited amount of elif statements.
+
+To get the desired result in the above example, we can change the latter if statments into elif and else statements.
+```python
+grade = 90
+if grade >= 90:
+  print('letter grade: A')
+elif grade >= 80:
+  print('letter grade: B')
+elif grade >= 70:
+  print('letter grade: C')
+elif grade >= 60:
+  print('letter grade: D')
+else:
+  print('letter grade: F')
+```
+Output:
+```
+letter grade: A
+```
+
+If-elif-else statements can be nested within each other as well, to allow for more complex logic.
+Here is a simple example:
+```python
+isDaytime = True
+isRaining = False
+
+if (isDaytime):
+  print('bring sunglasses ')
+  if (isRaining):
+    print('and bring an umbrella')
+  else:
+    print('and have a good day')
+else:
+  print('have a good night ')
+  if (isRaining):
+    print('and bring an umbrella')
+```
+Output:
+```
+bring sunglasses 
+and have a good day
+```
 
 ## Loops
 For and while loops iterate over a block of code as long as the provided condition(s) are satisfied or until it is forced to exit with a `break` statement.
