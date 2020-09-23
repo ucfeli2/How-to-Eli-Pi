@@ -206,6 +206,7 @@ for item in range(10):
 list_in_list = [['a', 99, "this is it"], [25, 10, "numbers"]]
 
 #The outer for loop iterates over the nested lists in list_in_list and the nested for loop iterates through the nested lists' individual elements and prints them out
+
 for list in list_in_list:
   print("Iterating over this list: ")
   print(list)
@@ -216,4 +217,3 @@ for list in list_in_list:
     elif isinstance(element, int):
       print("This is an integer: " + str(element))
   print('\n')
-```
